@@ -4,12 +4,6 @@ cdl()    {
   ls -al;
 }
 
-# Make a directory and cd into it
-mkcd() {
-    mkdir "$@"
-    cd "$@"
-}
-
 #If you pass no arguments, it just goes up one directory.
 #If you pass a numeric argument it will go up that number of directories.
 #If you pass a string argument, it will look for a parent directory with that name and go up to it.
