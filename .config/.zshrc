@@ -26,15 +26,13 @@ source ~/.oh-my-zsh/custom/themes/powerlevel10k
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
-if command -v fortune &> /dev/null && command -v cowsay &> /dev/null; then
-  fortune | cowsay -f tux
-fi
+
 
 export EDITOR='nvim'
 
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
 
 # pnpm
 export PNPM_HOME="/home/user/.local/share/pnpm"
@@ -43,3 +41,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+if command -v fortune &> /dev/null && command -v cowsay &> /dev/null; then
+  fortune | cowsay -f tux
+fi
