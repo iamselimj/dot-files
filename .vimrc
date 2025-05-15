@@ -1,0 +1,30 @@
+syntax enable
+set cursorline
+set cursorcolumn
+set number
+set relativenumber
+set history=1000
+filetype plugin on
+filetype indent on
+set autoread
+set ruler
+set cmdheight=1
+set hid
+set ignorecase
+set smartcase
+set hlsearch
+set incsearch
+set lazyredraw
+set magic
+set showmatch
+set noerrorbells
+set novisualbell
+set regexpengine=0
+set expandtab
+set smarttab
+set shiftwidth=4
+set tabstop=4
+set ai
+set si
+set wrap
+set laststatus=2
